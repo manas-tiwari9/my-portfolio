@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Manas Tiwari – Data Scientist. Explore projects, skills, and contact information.">
+    <title>Manas Tiwari - Data Scientist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="image" href="image/manas.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="chatbot.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link rel="shortcut icon" href="image/manas.png" type="image/x-icon">
+</head>
+<body>
+    <a href="#home" class="skip-link" style="position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
+    <nav class="navbar" role="navigation" aria-label="Main">
+        <div class="container">
+            <div class="logo">
+                <h1 id="logo-text">Manas Tiwari</h1>
+            </div>
+            <button class="menu-toggle" id="mobile-menu" aria-label="Toggle menu" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-menu" id="primary-navigation" role="menubar">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#" class="nav-link" target="_blank" rel="noopener">Blog</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode" title="Toggle theme">
+                    <i class="fas fa-moon" aria-hidden="true"></i>
+                </button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div id="particles-js"></div>
+        <div class="container">
+            <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                <h1 class="animate-text">Hello, I'm <span class="highlight">Manas Tiwari</span></h1>
+                <h2 class="animate-text delay-1">I'm a <span id="typing-text"></span></h2>
+                <p class="animate-text delay-2">Welcome to my personal website where I showcase my work and skills.</p>
+                <div class="hero-buttons animate-text delay-3">
+                    <a href="#contact" class="btn primary-btn">Contact Me</a>
+                    <a href="#projects" class="btn secondary-btn">View My Work</a>
+                </div>
+                <div class="social-icons animate-text delay-4">
+                    <a href="https://www.linkedin.com/in/manas-tiwari-85bb90380/" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://github.com/manas-tiwari9" class="social-link" aria-label="GitHub" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i></a>
+                    <a href="https://www.kaggle.com/manastiwari9" class="social-link" aria-label="Kaggle" target="_blank" rel="noopener"><i class="fab fa-kaggle" aria-hidden="true"></i></a>
+                    <a href="#" class="social-link" aria-label="X (Twitter)" target="_blank" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="hero-image animate-text delay-2" data-aos="fade-left" data-aos-duration="1000">
+                <div class="profile-container">
+                    <div class="profile-circle">
+                        <img src="image/manas.png" alt="Portrait of Manas Tiwari" id="profile-img" decoding="async" fetchpriority="high">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>About Me</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right" data-aos-duration="800">
+                <h3>Get to know me!</h3>
+                <p>Hi! I’m <span class="highlight">Manas</span> — a <span class="highlight">data scientist</span> driven to find the 'why' behind the numbers.</p>
+                <p>My journey began watching my local <i>kirana</i> store owner, wondering how he'd guess what to stock for the festival season. I realized critical decisions were being made on intuition, not data.</p>
+                <p>That's when I taught myself to code: to replace uncertainty with insight. As a <span class="highlight">Data Science student at LPU</span>, I'm now scaling that curiosity, using <span class="highlight">machine learning</span> to turn complex data into smart, practical solutions.</p>
+                <div class="about-buttons">
+                    <a href="Resume/Manas_Tiwari_Resume.pdf" class="btn primary-btn" id="download-cv" target="_blank">Resume</a>
+                </div>
+            </div>
+                <div class="about-details" data-aos="fade-left" data-aos-duration="800">
+                    <div class="detail-item">
+                        <i class="fas fa-user-graduate"></i>
+                        <div>
+                            <h4>Education</h4>
+                            <p>Data Science, LPU Punjab</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-briefcase"></i>
+                        <div>
+                            <h4>Experience</h4>
+                            <p>ML Model Development</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Punjab, India</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-language"></i>
+                        <div>
+                            <h4>Languages</h4>
+                            <p>English, Hindi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        <section id="projects" class="projects section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>My Projects</h2>
+                    <div class="underline"></div>
+                </div>
+                <div class="projects-grid">
+                    </div>
+            </div>
+        </section>
+
+    <section id="skills" class="skills section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>My Skills</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Programming & Data</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item" data-skill="Python (Advanced)">
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <h4>Python</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 95%"></div>
+                            </div>
+                            <span class="skill-percentage">Intermediate</span>
+                        </div>
+                        <div class="skill-item" data-skill="SQL (Advanced)">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <h4>SQL</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 95%"></div>
+                            </div>
+                            <span class="skill-percentage">Advanced</span>
+                        </div>
+                        <div class="skill-item" data-skill="C++ (Intermediate)">
+                            <div class="skill-icon"><i class="fas fa-file-code"></i></div>
+                            <h4>C++</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 80%"></div>
+                            </div>
+                            <span class="skill-percentage">Intermediate</span>
+                        </div>
+                        <div class="skill-item" data-skill="HTML5 (Advanced)">
+                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                            <h4>HTML5</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 90%"></div>
+                            </div>
+                            <span class="skill-percentage">Advanced</span>
+                        </div>
+                        <div class="skill-item" data-skill="CSS3 (Intermediate)">
+                            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                            <h4>CSS3</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                            <span class="skill-percentage">Intermediate</span>
+                        </div>
+                        <div class="skill-item" data-skill="JavaScript (Intermediate)">
+                            <div class="skill-icon"><i class="fab fa-js"></i></div>
+                            <h4>JavaScript</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 75%"></div>
+                            </div>
+                            <span class="skill-percentage">Basic</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Modeling & Machine Learning</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item" data-skill="TensorFlow">
+                            <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                            <h4>TensorFlow</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 90%"></div>
+                            </div>
+                            <span class="skill-percentage"></span>
+                        </div>
+                        <div class="skill-item" data-skill="scikit-learn">
+                            <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+                            <h4>scikit-learn</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 93%"></div>
+                            </div>
+                            <span class="skill-percentage"></span>
+                        </div>
+                        <div class="skill-item" data-skill="XGBoost">
+                            <div class="skill-icon"><i class="fas fa-rocket"></i></div>
+                            <h4>XGBoost</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 90%"></div>
+                            </div>
+                            <span class="skill-percentage"></span>
+                        </div>
+                        <div class="skill-item" data-skill="LightGBM">
+                            <div class="skill-icon"><i class="fas fa-bolt"></i></div>
+                            <h4>LightGBM</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 88%"></div>
+                            </div>
+                            <span class="skill-percentage"></span>
+                        </div>
+                       
+                </div>
+               
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                    <h3>Professional Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item" data-skill="Communication">
+                            <div class="skill-icon"><i class="fas fa-comments"></i></div>
+                            <h4>Communication</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 90%"></div>
+                            </div>
+                            <span class="skill-percentage"></span>
+                        </div>
+                        <div class="skill-item" data-skill="Teamwork">
+                            <div class="skill-icon"><i class="fas fa-users"></i></div>
+                            <h4>Teamwork</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                            <span class="skill-percentage"></span>
+                        </div>
+                        <div class="skill-item" data-skill="Problem Solving">
+                            <div class="skill-icon"><i class="fas fa-puzzle-piece"></i></div>
+                            <h4>Problem Solving</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 88%"></div>
+                            </div>
+                            <span class="skill-percentage"></span>
+                        </div>
+                        <div class="skill-item" data-skill="Creativity">
+                            <div class="skill-icon"><i class="fas fa-lightbulb"></i></div>
+                            <h4>Creativity</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 92%"></div>
+                            </div>
+                            <span class="skill-percentage"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <section id="tech-stack" class="tech-stack section">
+            <div class="container">
+                <div class="tech-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Tools & Platforms</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item" data-tilt>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                            <span>Git</span>
+                        </div>
+                        <div class="tech-item" data-tilt>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" alt="Jupyter">
+                            <span>Jupyter</span>
+                        </div>
+                        <div class="tech-item" data-tilt>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
+                            <span>VS Code</span>
+                        </div>
+                        <div class="tech-item" data-tilt>
+                            <img src="https://cdn.brandfetch.io/cursor.com/fallback/lettermark/theme/dark/h/256/w/256/icon?c=1bfwsmEH20zzEfSNTed" alt="Cursor">
+                            <span>Cursor</span>
+                        </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+<section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="badge">Get In Touch</span>
+                <h2>Let's Work Together</h2>
+                <p class="subtitle">Ready to bring your ideas to life? I'm here to help you build something amazing.</p>
+            </div>
+            
+            <div class="contact-content-new">
+                
+                <div class="contact-info-new" data-aos="fade-right" data-aos-duration="800">
+                    <h3>Contact Information</h3>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>tiwarimanas8057@gmail.com</p>
+                            
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 12345 67890</p> 
+                            <span>Available for calls</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Punjab, India</p>
+                            <span>Open to remote opportunities</span>
+                        </div>
+                    </div>
+
+                    <div class="follow-me">
+                        <h3>Follow Me</h3>
+                        <div class="contact-social-links">
+                            <a href="https://www.linkedin.com/in/manas-tiwari-85bb90380" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                            <a href="https://github.com/manas-tiwari9" class="social-link" aria-label="GitHub" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i></a>
+                            <a href="https://www.kaggle.com/manastiwari9" class="social-link" aria-label="Kaggle" target="_blank" rel="noopener"><i class="fab fa-kaggle" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container-new" data-aos="fade-left" data-aos-duration="800">
+                    <h3>Send me a message</h3>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" placeholder="Your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project, ideas, or just say hello..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                        <div id="form-status"></div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+</section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Manas Tiwari</h2>
+                </div>
+                <p>Thanks for visiting my portfolio website.</p>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/manas-tiwari-85bb90380" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://github.com/manas-tiwari9" class="social-link" aria-label="GitHub" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i></a>
+                    <a href="https://www.kaggle.com/manastiwari9" class="social-link" aria-label="Kaggle" target="_blank" rel="noopener"><i class="fab fa-kaggle" aria-hidden="true"></i></a>
+                    <a href="#" class="social-link" aria-label="X (Twitter)" target="_blank" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Manas Tiwari. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="chatbot.js" defer></script>
+</body>
+</html>
