@@ -419,46 +419,47 @@ function initProjectsFilter() {
 
 // Dynamically populate projects
 // Dynamically populate projects
+// Dynamically populate projects
 function initProjectsData() {
     const projectsGrid = document.querySelector('.projects-grid');
     if (!projectsGrid) return;
     
-    // === UPDATED LIST: ONLY YOUR 3 CHOSEN PROJECTS ===
+    // === UPDATED WITH YOUR GITHUB LINKS ===
     const projects = [
         {
-            id: 1, // Renumbered ID for animation delay
+            id: 1, 
             title: 'Book Recommender System',
-            description: 'An intelligent book recommendation system that combines collaborative filtering and content-based approaches. Features include personalized recommendations, user preference analysis, and a user-friendly web interface for seamless book discovery.',
-            image: 'https://i.postimg.cc/MGyXDb27/Book.jpg',
+            description: 'An intelligent book recommendation system combining collaborative filtering (ALS) with content-based embeddings to personalize suggestions.',
+            image: 'https.i.postimg.cc/MGyXDb27/Book.jpg',
             category: 'ml',
-            tags: ['Python', 'Machine Learning', 'Recommender Systems', 'Web Development', 'Flask', 'Data Science'],
-            demoLink: 'https://adil-book-recommender.onrender.com/',
-            codeLink: 'https://github.com/AdilShamim8/Book-Recommender-System'
+            tags: ['Python', 'Machine Learning', 'Recommender Systems', 'Flask', 'Data Science'],
+            demoLink: null, // <-- Live link removed
+            codeLink: 'https://github.com/YOUR-USERNAME/YOUR-BOOK-PROJECT-REPO' // ⚠️ PASTE YOUR LINK HERE
         },
         {
-            id: 2, // Renumbered ID for animation delay
+            id: 2, 
             title: 'Resume Screening',
-            description: 'AI-powered tool for efficient and fair candidate selection. Utilizes advanced NLP techniques to parse, analyze, and rank resumes based on job requirements. Features include automated skill extraction, experience matching, and bias-free candidate evaluation.',
+            description: 'AI-powered tool using NLP to parse, analyze, and rank resumes based on job requirements, reducing manual screening overhead.',
             image: 'https://i.postimg.cc/tTxx1KMP/20251013-1717-AI-Powered-Resume-Screening-simple-compose-01k7emhkcqffrrt7hwx30df76e.png',
             category: 'ai',
-            tags: ['Python', 'NLP', 'Machine Learning', 'HR Tech', 'Text Analysis', 'Automation'],
-            demoLink: null,
-            codeLink: 'https://github.com/AdilShamim8/Resume-Screening'
+            tags: ['Python', 'NLP', 'Machine Learning', 'spaCy', 'SBERT', 'Automation'],
+            demoLink: null, // <-- Live link removed
+            codeLink: 'https://github.com/manas-tiwari9/resume-screening' // ⚠️ PASTE YOUR LINK HERE
         },
         {
-            id: 3, // Renumbered ID for animation delay
+            id: 3, 
             title: 'Toolly',
-            description: 'An AI-powered productivity suite that automates and streamlines your daily tasks. Features include intelligent text processing, automated content generation, and smart task management, all designed to boost your efficiency and save valuable time.',
-            image: 'https://i.postimg.cc/4d0vfpLB/20250613-1939-Toolly-Modern-Tech-Logo-simple-compose-01jxmr7v1neyav79wdd6fye13h.png',
+            description: 'An AI-powered productivity suite that automates and streamlines daily tasks, featuring intelligent text processing and content generation.',
+            image: 'https.i.postimg.cc/4d0vfpLB/20250613-1939-Toolly-Modern-Tech-Logo-simple-compose-01jxmr7v1neyav79wdd6fye13h.png',
             category: 'ai',
             tags: ['Python', 'AI', 'NLP', 'Web Development', 'Productivity Tools', 'Automation'],
-            demoLink: 'https://www.toolly.tech/',
-            codeLink: 'https://github.com/AdilShamim8/Toolly'
+            demoLink: null, // <-- Live link removed
+            codeLink: 'https://github.com/manas-tiwari9/tooly-studio' // ⚠️ PASTE YOUR LINK HERE
         }
     ];
     // ======================================
     
-    // Create project items
+    // Create project items (This code stays the same)
     projects.forEach(project => {
         const projectItem = document.createElement('div');
         projectItem.className = `project-item ${project.category}`;
@@ -470,7 +471,7 @@ function initProjectsData() {
             <div class="project-content">
                 <h3>${project.title}</h3>
                 <p>${project.description}</p>
-                <div class.project-tags">
+                <div class="project-tags">
                     ${project.tags.map(tag => `<span class="project-tag">${tag}</span>`).join('')}
                 </div>
                 <div class="project-links">

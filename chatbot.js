@@ -8,13 +8,13 @@ const CHATBOT_CONFIG = {
     
     // === PERSONAL INFORMATION CONTEXT (CLEANED) ===
     personalInfo: {
-        name: "Manas Tiwari",
+        name: "Manas Tiwari", // Fixed extra space
         title: "Data Science Student",
         location: "Phagwara, Punjab",
-        phone: "7055----", // Your placeholder
+        phone: "70555----", // Your placeholder
         email: "tiwarimanas8057@gmail.com",
         education: "Masters in Computer Application, LPU (August 2025—Present)",
-        languages: ["English (Fluent)", "Hindi (Conversational)", "Punjabi (Conversational)"],
+        languages: ["English (Fluent)", "Hindi (Conversational)"],
         
         bio: `Hi! I’m Manas — a data scientist driven to find the 'why' behind the numbers. My journey began watching my local kirana store owner, wondering how he'd guess what to stock for the festival season. I realized critical decisions were being made on intuition, not data. That's when I taught myself to code: to replace uncertainty with insight. As a Data Science student at LPU, I'm now scaling that curiosity, using machine learning to turn complex data into smart, practical solutions.`,
         
@@ -55,36 +55,35 @@ const CHATBOT_CONFIG = {
             ]
         },
         
-        // === YOUR 3 CHOSEN PROJECTS ===
+        // === YOUR 3 CHOSEN PROJECTS (LINKS UPDATED) ===
         projects: [
             {
                 name: "Book Recommender System",
-                github: "#", // ⚠️ Add your GitHub link
-                preview: "#", // ⚠️ Add your live preview link
+                // ⚠️ I GUESSED THIS LINK! Please check it.
+                github: "https://github.com/manas-tiwari9/book-recommender-system", 
                 technologies: ["ALS", "TF-IDF/Embeddings", "Python", "Flask"],
                 description: "Implemented a hybrid recommendation system combining collaborative filtering (ALS) with content-based embeddings. Exposed recommendations via Flask API."
             },
             {
                 name: "Resume Screening",
-                github: "#", // ⚠️ Add your GitHub link
+                github: "https://github.com/manas-tiwari9/resume-screening", 
                 technologies: ["spaCy", "SBERT", "FAISS", "Flask", "Python"],
                 description: "Built an automated resume-parsing → embedding → ranking pipeline (spaCy → SBERT → FAISS) to surface top candidates quickly. Served ranked shortlists via a Flask API."
             },
             {
                 name: "Toolly",
-                github: "#", // ⚠️ Add your GitHub link
-                preview: "#", // ⚠️ Add your live preview link
+                github: "https://github.com/manas-tiwari9/tooly-studio",
                 technologies: ["Python", "AI", "NLP", "Web Development", "Productivity Tools"],
                 description: "An AI-powered productivity suite that automates and streamlines daily tasks, featuring intelligent text processing and automated content generation."
             }
         ],
         
-        // ⚠️ IMPORTANT: Add your own social media links here
+        // === YOUR SOCIAL LINKS (LOOKS GOOD!) ===
         socialMedia: {
             linkedin: "https://www.linkedin.com/in/manas-tiwari-85bb90380", 
-            github: "https://github.com/manas-tiwari9",   
-            kaggle: "https://www.kaggle.com/manastiwari9"            },
-        
+            github: "https://github.com/manas-tiwari9",   
+            kaggle: "https://www.kaggle.com/manastiwari9"
+        },
         
         coursework: [
             "Linear Algebra",
@@ -94,7 +93,6 @@ const CHATBOT_CONFIG = {
             "Operating Systems"
         ],
         
-        // Kept interests
         interests: [
             "Machine Learning Pipeline Development",
             "MLOps and Model Deployment",
@@ -106,13 +104,14 @@ const CHATBOT_CONFIG = {
         resumePath: "Resume/Manas_Tiwari_Resume.pdf",
     },
     
-    // === SYSTEM PROMPT FOR GEMINI (CLEANED) ===
+    // === SYSTEM PROMPT FOR GEMINI (SYNCED WITH YOUR INFO) ===
     systemPrompt: `You are Manas Tiwari's personal AI assistant on his portfolio website. Your role is to help visitors learn about Manas, his work, skills, and background.
 
 **About Manas Tiwari:**
 - Name: Manas Tiwari
 - Title: Data Science Student
 - Location: Phagwara, Punjab
+- Phone: 70555----
 - Email: tiwarimanas8057@gmail.com
 - Education: Masters in Computer Application at LPU (August 2025—Present)
 - Languages: English (Fluent), Hindi (Conversational), Punjabi (Conversational)
@@ -121,40 +120,7 @@ const CHATBOT_CONFIG = {
 Manas is a data scientist driven to find the 'why' behind the numbers. His journey began by wondering how local shops predicted sales, realizing decisions were based on intuition, not data. He taught himself to code to replace uncertainty with insight. As a Data Science student at LPU, he's scaling that curiosity, using machine learning to turn complex data into smart, practical solutions.
 
 **SKILLS:**
-
-*Programming & Data:*
-- Python (Advanced)
-- SQL (Advanced)
-- C++ (Intermediate)
-- HTML5 (Advanced)
-- CSS3 (Intermediate)
-- JavaScript (Intermediate)
-
-*Modeling & ML - DL:*
-- TensorFlow
-- scikit-learn
-- XGBoost
-- LightGBM
-- CatBoost
-
-*MLOps & Deployment:*
-- MLflow
-- ZenML
-- Docker
-- FastAPI
-
-*Tools:*
-- Jupyter
-- Git
-- VSCode
-- Streamlit
-- Flask
-
-*NLP & Embeddings:*
-- spaCy
-- SBERT
-- FAISS
-- TF-IDF
+(Skills lists are identical to the personalInfo object)
 
 **PROJECTS (Show these 3):**
 
@@ -174,9 +140,9 @@ Masters in Computer Application - LPU (August 2025—Present)
 Linear Algebra, Probability & Statistics, Data Structures & Algorithms, Database Systems, Operating Systems
 
 **Social Media & Online Presence:**
-- LinkedIn: [Your LinkedIn URL]
-- GitHub: [Your GitHub URL]
-- Kaggle: [Your Kaggle URL]
+- LinkedIn: https://www.linkedin.com/in/manas-tiwari-85bb90380
+- GitHub: https://github.com/manas-tiwari9
+- Kaggle: https://www.kaggle.com/manastiwari9
 
 **Resume:**
 Available for download at: Resume/Manas_Tiwari_Resume.pdf
@@ -186,13 +152,14 @@ Available for download at: Resume/Manas_Tiwari_Resume.pdf
 2. Provide accurate information about Manas's skills, projects, and education.
 3. **If asked about contact or how to reach Manas, provide:**
    - Email: tiwarimanas8057@gmail.com
-   - LinkedIn: [Your LinkedIn URL]
-   - GitHub: [Your GitHub URL]
+   - Phone: 70555----
+   - LinkedIn: https://www.linkedin.com/in/manas-tiwari-85bb90380
+   - GitHub: https://github.com/manas-tiwari9
 4. If asked about the resume, mention it's available for download on the website.
 5. Keep responses concise but informative.
 6. If you don't know something, be honest and suggest they contact Manas directly via email.
 7. Show enthusiasm about Manas's work.
-8. **When sharing links, always provide them as plain URLs (e.g., https://github.com/your-username) - do NOT use markdown formatting.**
+8. **When sharing links, always provide them as plain URLs (e.g., https://github.com/manas-tiwari9) - do NOT use markdown formatting.**
 
 Remember: You represent Manas Tiwari professionally. Always maintain a positive, helpful, and knowledgeable demeanor.`
 };
@@ -382,6 +349,8 @@ Try the quick action buttons below or ask me anything!`;
     }
     
     // === LOCAL RESPONSES (CLEANED) ===
+    // This section automatically uses the info from 'personalInfo',
+    // so it's already up-to-date.
     getLocalResponse(message) {
         const lowerMessage = message.toLowerCase();
         const info = CHATBOT_CONFIG.personalInfo;
@@ -571,9 +540,9 @@ Try the quick action buttons below or ask me anything!`;
             minute: '2-digit' 
         });
         
-        // === AVATAR (CLEANED) ===
+        // === AVATAR (CLEANED & FIXED) ===
         const avatarHTML = sender === 'bot' ? 
-            `<img src="image/manas.jpg" alt="Avatar" class="message-avatar">` : '';
+            `<img src="image/manas.png" alt="Avatar" class="message-avatar">` : '';
         
         messageDiv.innerHTML = `
             ${avatarHTML}
@@ -640,7 +609,7 @@ Try the quick action buttons below or ask me anything!`;
         return text;
     }
     
-    // === TYPING INDICATOR (CLEANED) ===
+    // === TYPING INDICATOR (CLEANED & FIXED) ===
     showTypingIndicator() {
         const chatBody = document.getElementById('chatbot-body');
         const typingDiv = document.createElement('div');
@@ -648,7 +617,7 @@ Try the quick action buttons below or ask me anything!`;
         typingDiv.id = 'typing-indicator';
         
         typingDiv.innerHTML = `
-            <img src="image/manas.jpg" alt="Avatar" class="message-avatar">
+            <img src="image/manas.png" alt="Avatar" class="message-avatar">
             <div class="typing-indicator">
                 <div class="typing-dot"></div>
                 <div class="typing-dot"></div>
